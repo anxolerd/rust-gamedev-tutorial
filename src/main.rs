@@ -84,7 +84,7 @@ fn main() -> Result<(), String> {
         i = (i + 1) % 255;
 
         // Render
-        render(&mut canvas, Color::RGB(i, 64, 255 - i), &texture, player)?;
+        render(&mut canvas, Color::RGB(i, 64, 255 - i), &texture, &player)?;
 
         // TIme management!
         ::std::thread::sleep(Duration::new(0, 1_000_000_000u32 / 60));
