@@ -24,7 +24,7 @@ fn render(
 
     let (width, height) = canvas.output_size()?;
 
-    // Screen center as (0, 0) coordinate
+    // Use screen center as (0, 0) coordinate
     let screen_position = player.position + Point::new(width as i32 / 2, height as i32 / 2);
     let screen_rect = Rect::from_center(
         screen_position,
